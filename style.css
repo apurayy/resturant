@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Gentium+Book+Basic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+.container{
+	width: 1250px;
+	margin: 0 auto;
+}
+.main{
+	display: flex;
+}
+img{
+	vertical-align: middle;
+}
+.common_heading{
+	font-size: 36px;
+	color: #cc9900;
+	padding: 14px 0;
+    font-weight: 400;
+	font-family: 'Yeseva One', cursive;
+}
+.common_pera{
+	padding: 33px 0 50px 0;
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 24px;
+}
+/*=====================common css end====================*/
+
+/*====================main_nav start============================*/
+#main_nav{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.logo{
+	width: 20%;
+}
+.menu{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+.menu ul{
+	display: flex;
+	justify-content: end;
+}
+.menu ul li{
+	display: inline-block;
+}
+.menu ul li a{
+	font-size: 21px;
+	color: #fff;
+	padding: 33px 10px;
+	margin-left: 50px;
+	font-weight: 700;
+	font-family: 'Gentium Book Basic', serif;
+	position: relative;
+}
+.menu ul li a::before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 5px;
+	background: #f5f1f1;
+	transition: .5s;
+}
+.menu ul li a:hover::before{
+	width: 100%;
+}
+/*====================main_nav end============================*/
+
+
+/*=====================banner part start================*/
+.banner{
+	padding: 236px 0 140px 0;
+	background: url("img/banner.jpg") no-repeat center;
+	background-size: cover;
+}
+.banner .banner_text{
+	text-align: center;
+}
+.banner .banner_text h1 {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 122px;
+    margin-bottom: 23px;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+.banner .banner_btn{
+	text-align: center;
+	padding-top: 30px;
+}
+.banner .banner_btn a{
+	color: #ffff;
+	font-size: 18px;
+	padding: 22px 51px;
+	margin-left: 30px;
+	background: rgb(245 245 245 / 38%);
+    border: 1px solid #fff;
+    transition: .4s;
+}
+.banner .banner_btn a:hover{
+	background: rgba(0, 0, 0, 0.60);
+	border: 1px solid #000;
+}
+/*=====================banner part end================*/
+
+
+/*=====================about part start================*/
+.about{
+	width: 100%;
+	background: url("img/com_bg.png") no-repeat center;
+	background-size: cover;
+	padding: 100px 0;
+}
+.about .about_left{
+	width: 540px;
+	margin-right: 70px;
+	padding-left: 100px;
+	text-align: center;
+}
+.about .about_right{
+	width: 640px;
+}
+.about .about_right img{
+	width: 550px;
+	height: 550px;
+}
+/*=====================about part end================*/
+
+
+/*=====================services part start================*/
+.services{
+	width: 100%;
+	background: url("img/ser_mian.jpg") no-repeat center;
+	background-size: cover;
+	padding: 100px 0;
+}
+.services .services_left{
+	width: 540px;
+	margin-right: 70px;
+}
+.services .services_right{
+	width: 640px;
+	background: rgba(0, 0, 0, 0.65);
+	text-align: center;
+	padding: 78px 70px;
+	margin: 0 30px;
+}
+.services .services_right h2{
+	color: #fff !important;
+}
+.services .services_right p{
+	color: #fff;
+}
+.services .services_right .pic img{
+	margin-left: 30px;
+}
+/*=====================services part end================*/
+
+
+/*=====================pricing part start================*/
+.pricing{
+	padding: 100px 0 35px 0;
+	background: url("img/pric_bg.png") no-repeat center;
+	background-size: cover;
+}
+.pricing .pricing_left{
+	width: 540px;
+	margin-right: 70px;
+	padding-left: 100px;
+}
+.main_item{
+	padding-bottom: 65px;
+}
+.pricing_title{
+	text-align: center;
+}
+.pricing_title h2{
+	font-size: 36px;
+	color: #cc9900;
+	padding-bottom: 15px;
+    font-weight: 400;
+	font-family: 'Yeseva One', cursive;
+}
+.pricing .item .item_desc{
+	padding-top: 35px;
+}
+.pricing .item .item_heading{
+	border-bottom: 1px solid #e1c567;
+	padding-bottom: 10px;
+}
+.pricing .item .item_heading .text{
+	display: inline-block;
+	font-size: 21px;
+	color: #cc9900;
+    font-weight: 400;
+	font-family: 'Yeseva One', cursive;
+}
+.pricing .item .item_heading .rate{
+	float: right;
+	font-size: 21px;
+	color: #cc9900;
+    font-weight: 400;
+	font-family: 'Yeseva One', cursive;
+}
+.pricing .item p{
+	font-size: 16px;
+	color: #4c4c4c;
+	padding-top: 15px;
+}
+.pricing .pricing_right{
+	width: 640px;
+	padding: 0 110px 0 100px;
+}
+/*=====================pricing part end================*/
+
+
+/*=====================reviews part start================*/
+.reviews{
+	padding: 100px 0;
+	background: url("img/reviews.jpg") no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+.reviews .item-blank{
+	width: 240px;
+}
+.reviews .reviews_box{
+	width: 770px;
+	padding: 80px 70px;
+	background: rgba(0, 0, 0, 0.70);
+	color: #fff;
+	position: relative;
+}
+.reviews .reviews_box h2{
+	color: #fff;
+}
+.reviews .reviews_box p{
+	font-size: 25px;
+	color: #dde0df;
+	line-height: 45px;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	font-weight: 700;
+	font-family: 'Gentium Book Basic', serif;
+}
+.review_p{
+	font-size: 18px;
+	color: #fff;
+}
+.reviews_box .icon {
+    position: absolute;
+    top: 203px;
+    left: 35px;
+}
+.reviews_box .icon i{
+	color: #9b9d9a;
+	font-size: 30px;
+}
+/*=====================reviews part end================*/
+
+/*=====================contact part start================*/
+.contact{
+	padding: 100px 0;
+	background: url("img/com_bg.png") no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+.contact .main{
+	justify-content: space-between;
+}
+.contact .contact_left{
+	width: 640px;
+	/*margin-right: 70px;*/
+	padding-left: 40px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.contact .contact_left .item_one{
+	width: 270px;
+}
+.contact .contact_left .item_one img{
+	width: 270px;
+}
+
+.contact .contact_right{
+	width: 540px;
+	padding-right: 110px;
+}
+.contact_right h2{
+	padding: 0 0 10px 0 !important;
+}
+.contact_right p{
+	font-size: 18px;
+	line-height: 25px;
+	color: #4c4c4c;
+	padding-top: 20px;
+}
+.from{
+	width: 100%;
+	padding-top: 35px;
+	text-align: left;
+}
+.from .input_box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.from .input_box .from_control{
+	width: calc(100% /2 - 20px);
+	margin-bottom: 30px;
+}
+.from .input_box .from_control .details{
+	margin-bottom: 9px;
+	font-size: 14px;
+	color: #c9a131;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
+.from .input_box .from_control input{
+	width: 100%;
+	height: 35px;
+	padding: 10px 15px;
+	border: 1px solid #c8c6c6;
+	outline-color: #c9a131;
+	background: transparent;
+}
+::placeholder{
+	font-size: 16px;
+	color: #7c7c7c;
+	font-weight: 500;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+}
+.main_form_btn{
+	text-align: center !important;
+}
+.form_btn{
+	padding: 10px 60px;
+	background: #c9a131;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+/*=====================contact part end================*/
+
+
+/*=====================footer part start================*/
+.footer{
+	padding: 60px 0;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+.footer h3{
+	font-size: 21px;
+	color: #fff;
+	padding-bottom: 15px;
+    font-weight: 400;
+	font-family: 'Yeseva One', cursive;
+}
+.footer h4{
+	line-height: 30px;
+}
+.footer .main{
+	justify-content: space-between;
+}
+.footer img{
+	padding-bottom: 20px;
+}
+.footer .footer_left{
+	width: 440px;
+	padding: 0 30px 0 40px;
+}
+.footer .footer_left p{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	font-family: 'Open Sans', sans-serif;
+}
+.footer .footer_mid{
+	width: 330px;
+	padding-right: 100px;
+}
+.footer .footer_mid_img{
+	padding-top: 50px;
+}
+.footer .footer_right{
+	width: 340px;
+	padding-right: 110px;
+}
+.footer .footer_right p{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+	font-family: 'Open Sans', sans-serif;
+}
+.footer .footer_right .social{
+	padding-top: 50px;
+}
+.footer .footer_right .social i{
+	margin-left: 20px;
+}
+/*=====================footer part end================*/
